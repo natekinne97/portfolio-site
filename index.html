@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nathan Kinne</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     </head>
     <body>
         <nav>
-            <div class="image">
-                <img src="pictures/Nates Web Forge Logo-02.png" alt="Burning anvil">
-            </div>
+            
+            <img src="pictures/Nates Web Forge Logo-02.png" alt="Burning anvil">
             <header><a href="#">Nate's Web forge</a></header>
+            <i class="fas fa-bars fa-3x"></i>
             <ul class="nav-links">
                 <li><a>Portfolio</a></li>
                 <li><a>Contact</a></li>
@@ -22,7 +23,7 @@
 
         <main>
             <!-- Home page -->
-            <section>
+            <section id="home">
                 <h1>Nathan Kinne</h1>
                 <p class="homepage">
                     I am a full stack developer and currently based in the Austin area. My
@@ -32,13 +33,42 @@
                 </p>
             </section>
             <!-- Portfolio page -->
-            <section>
+            <section id="portfolio">
                 <h1>Portfolio</h1>
-                <img src="#" alt="A screen shot of my Geo Quiz App">
+                <img class="port-image" src="pictures/geoQuiz.png" alt="A screen shot of my Geo Quiz App">
+                <div class="technologies">
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>Jquery</p>
+                </div>
                 <p>This Geo Quiz is a fun way to test your knowledge of random facts about
                 geography.
                 </p>
+                <div class="code-links-group">
+                    <a class="code-links" href="https://natekinne97.github.io/geography-quiz/">Live page</a>
+                    <a class="code-links" href="https://github.com/natekinne97/geography-quiz">Code</a>
+                </div>
             </section>
+            <!-- contact -->
+            <section>
+                <h1>Contact</h1>
+                <p>I'm currently looking for work. Shoot me an email or have a look at my github.</p>
+                <div class="contact-ways">
+                    <a href="malito:nathan.kinne@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
+                    <a href="https://github.com/natekinne97?tab=repositories" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                </div>
+            </section>
+            <!-- About -->
+            <section>
+                <h1>About</h1>
+                <p>
+                    From the first time, I fixed my family’s computer my love of technology has
+                    grown. With a thirst for learning and a love of tech, it wasn’t long before
+                    I learned to program. Exploring some of everything from C to JavaScript. I
+                    finally landed on web development.
+                </p>
+            </section>
+
         </main>
 
     </body>

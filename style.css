@@ -2,26 +2,139 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0 5% 5% 5%;
+}
+/* nav bars */
 nav{
     position: fixed;
-    height: 10%;
+    height: 15%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background: white;
 }
 
-nav h1{
+nav a{
   text-align: center;
+  font-size: 50px;
+  text-decoration: none;
+  display: flex;
+  align-self: flex-end;
+  margin-top: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-bars{
+    margin-right: 5%;
+    cursor: pointer;
 }
 ul{
-    /* display: none; */
+    display: none;
 }
 
 img{
     text-align: left;
-    width: 20%;
+    width: 30%;
 }
+/* content */
 
 section{
-    padding-top: 100px;
+    padding-top: 150px;
+}
+
+section h1{
+    text-align: center;
+    font-size: 55px;
+}
+
+section p{
+    line-height: 36pt;
+    text-align: center;
+}
+
+section img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* tech for portfolio */
+.technologies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* code links */
+.code-links-group{
+    text-align: center;
+}
+
+.code-links{
+    margin-left: 10%;
+    text-decoration: none;
+}
+   
+.contact-ways{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+/* tablet */
+@media screen and (min-width: 768px){
+
+    nav a:first-child{
+        display: block;
+        font-size: 40px;
+        margin-top: 11%;
+    }
+
+    .fa-bars{
+        margin-right: 5%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1022px){
+    body{
+        margin: 1%;
+    }
+    /* nav bar */
+    nav{
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .fa-bars{
+        display: none !important;
+    }
+
+    nav a:first-child{
+        text-align: center;
+    }
+    nav ul{
+        display: block;
+        list-style: none;
+    }
+    nav img{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* content */
+    main{
+        width: 60%;
+        margin-left: 33%;
+    }
+
+    section{
+        margin-bottom: 300px;
+    }
+    
 }
