@@ -12,9 +12,9 @@ body{
 nav{
     position: fixed;
     height: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: space-between; */
     background: white;
 }
 
@@ -32,6 +32,16 @@ nav a{
   color: rgb(0, 0, 0, .6);
 }
 
+/* the div container the hamburger and icon 
+Purpose when on mobile it's easier to hide and show the menu items*/
+.top-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
 nav a:hover{
     color: black;
     text-decoration: underline;
@@ -42,14 +52,35 @@ nav a:hover{
     margin-right: 5%;
     cursor: pointer;
 }
-ul{
+/* hide the menu items by default */
+.nav-links{
     display: none;
 }
 
-img{
+/* toggle class for top nav bar on mobile. resize the bar for ease of use */
+.mobile-click{
+    height: 100%;
+}
+
+.nav-links-mobile{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+       
+}
+
+.img-clicked-style{
+    width: 30%;
+    height: 13%;
+}
+
+.top-bar img{
     text-align: left;
     width: 30%;
+    height: 5%;
 }
+
 /* content */
 
 section{
@@ -108,6 +139,9 @@ section img{
         font-size: 40px;
         margin-top: 11%;
     }
+    .top-bar img{
+        width: 15%;
+    }
 
     .fa-bars{
         margin-right: 1%;
@@ -128,6 +162,19 @@ section img{
         flex-direction: column;
         justify-content: left;
     }
+    .top-bar{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-bar img{
+        padding-bottom: 0;
+        width: 60%;
+        height: 45%;
+        margin: 0 auto;
+    }
 
     .fa-bars{
         display: none !important;
@@ -136,15 +183,17 @@ section img{
     nav a:first-child{
         text-align: center;
     }
-    nav ul{
-        display: block;
+     .nav-links{
         list-style: none;
-        margin-right: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        margin-right: 5%;
     }
 
-    nav img{
-        width: 50%;
-        margin: 0 auto;
+    .nav-links li{
+        margin-bottom: 5%;
     }
 
     /* content */
