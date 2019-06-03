@@ -27,7 +27,6 @@ nav a{
   align-self: flex-end;
   margin-top: 5%;
   cursor: pointer;
-  display: none;
   /* color: #BEBEBE; */
   color: rgb(0, 0, 0, .6);
 }
@@ -42,15 +41,33 @@ Purpose when on mobile it's easier to hide and show the menu items*/
 
 }
 
+.top-bar a{
+    display: none;
+}
+
 nav a:hover{
+    color: purple;
+}
+
+nav a:active{
+    text-decoration: none;
+}
+.active-link{
     color: black;
     text-decoration: underline;
+}
+
+.top-bar i {
+    display: flex;
+    align-items: center;
 }
 
 .fa-bars{
     margin-top: 2%;
     margin-right: 5%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 /* hide the menu items by default */
 .nav-links{
@@ -67,7 +84,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-       
 }
 
 .img-clicked-style{

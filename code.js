@@ -11,7 +11,6 @@ function showMenu(){
 
 //change style of menu items for click
 function styleMenuAndItems(){
-    console.log('styling items');
     // change navbar to 100% height for better view
     $('nav').toggleClass('mobile-click');
     // resize the imaege
@@ -44,14 +43,12 @@ function checkSectionVisible(){
         scrollItems = menuItems.map(function () {
             let item = $($(this).attr('href'));
             if(item.length){return item;}
-        })
-        console.log(scrollItems);
-        console.log(menu);
-        console.log(menu.length);
+        });
+      
     $(window).scroll(function(){
         // get conainter position
-        let fromTop = $(this).scrollTop();
-
+        let fromTop = $(this).scrollTop() + 100;
+        
         // get id of current scroll item
         let cur = scrollItems.map(function(){
             if($(this).offset().top < fromTop)
@@ -61,8 +58,11 @@ function checkSectionVisible(){
         // get current element
         cur = cur[cur.length-1];
         let id = cur && cur.length ? cur[0].id : "";
-        console.log(id);
-        console.log(cur);
+       
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active-link")
+            .end().filter("[href='#" + id + "']").parent().addClass("active-link");
 
     });
 }
