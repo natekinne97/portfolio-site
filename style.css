@@ -192,7 +192,7 @@ section img{
     }
     .top-bar img{
         padding-bottom: 0;
-        width: 60%;
+        width: 50%;
         height: auto;
         margin: 0 auto;
     }
@@ -201,9 +201,11 @@ section img{
         display: none !important;
     }
 
+    /* nate's web forge */
     nav a:first-child{
         text-align: center;
     }
+    /* navigation links */
     .nav-links{
         list-style: none;
         display: flex;
@@ -211,10 +213,6 @@ section img{
         justify-content: center;
         margin: 0;
         margin-right: 5%;
-    }
-
-    .nav-links li{
-        margin-bottom: 5%;
     }
 
     /* content */
