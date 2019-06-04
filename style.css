@@ -84,6 +84,7 @@ nav a:active{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: -5%;
 }
 
 .img-clicked-style{
@@ -118,6 +119,7 @@ section img{
     display: block;
     margin: 0 auto;
     width: 70%;
+
 }
 
 /* tech for portfolio */
@@ -140,11 +142,14 @@ section img{
     color: #AFB0FC;
 }
 
-   
+/* contact buttons */
 .contact-ways{
     display: flex;
     justify-content: space-evenly;
-    
+}
+
+.contact-ways a {
+    text-decoration: none;
 }
 
 /* tablet */
@@ -188,7 +193,7 @@ section img{
     .top-bar img{
         padding-bottom: 0;
         width: 60%;
-        height: 45%;
+        height: auto;
         margin: 0 auto;
     }
 
@@ -199,7 +204,7 @@ section img{
     nav a:first-child{
         text-align: center;
     }
-     .nav-links{
+    .nav-links{
         list-style: none;
         display: flex;
         flex-direction: column;

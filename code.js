@@ -33,8 +33,21 @@ function mobileFunctions(){
     linksClicked();
 }
 
+// fancy animation for anchors clicked
+function anchorAnimation(menuItems) {
+    menuItems.on('click', function(e){
+        let href = $(this).attr('href'),
+            offsetTop = href === "#" ? 0 : $(href).offset().top - 100;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        e.preventDefault();
+    });
+}
+
 // Desktop side. highlight menu items on scroll. 
 function checkSectionVisible(){
+
     // get nav links and find corresponding sections
     let menu = $('.nav-links'),
         // list of all items
@@ -44,7 +57,9 @@ function checkSectionVisible(){
             let item = $($(this).attr('href'));
             if(item.length){return item;}
         });
-      
+    //   menu animations Purpose of placing this here is to prevent globals
+    anchorAnimation(menuItems);
+
     $(window).scroll(function(){
         // get conainter position
         let fromTop = $(this).scrollTop() + 100;
