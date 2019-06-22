@@ -115,6 +115,14 @@ section p{
     text-align: center;
 }
 
+/* Personal image */
+.selfie{
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
 section img{
     display: block;
     margin: 0 auto;
@@ -124,9 +132,14 @@ section img{
 
 /* tech for portfolio */
 .technologies{
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.port-entry{
+    margin-bottom: 4%;
 }
 /* code links */
 .code-links-group{
@@ -135,7 +148,7 @@ section img{
 
 .code-links{
     margin-left: 10%;
-    color: blue;
+    color: rgb(18, 8, 107);
 }
 
 .code-links:hover{
@@ -177,7 +190,7 @@ section img{
     /* nav bar */
     nav{
         height: 100%;
-        width: 30%;
+        width: 20%;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -217,7 +230,7 @@ section img{
 
     /* content */
     main{
-        width: 60%;
+        width: 50%;
         margin-left: 33%;
     }
 
