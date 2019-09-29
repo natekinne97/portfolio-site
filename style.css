@@ -144,6 +144,7 @@ section img{
 /* code links */
 .code-links-group{
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .code-links{
