@@ -100,9 +100,13 @@ nav a:active{
 
 /* content */
 
-section{
-    padding-top: 150px;
+#home{
+    padding-top: 7em;
 }
+
+/* section{
+    padding-top: 7em;
+} */
 
 section h1{
     text-align: center;
@@ -152,6 +156,10 @@ section img{
     color: rgb(18, 8, 107);
 }
 
+#contact{
+    padding-bottom: 3em;
+}
+
 .code-links:hover{
     color: #AFB0FC;
 }
@@ -188,6 +196,11 @@ section img{
     body{
         margin: 1%;
     }
+
+    #home{
+        padding-top: 2em;
+    }
+
     /* nav bar */
     nav{
         height: 100%;
@@ -235,8 +248,8 @@ section img{
         margin-left: 33%;
     }
 
-    section{
+    /* section{
         margin-bottom: 300px;
-    }
+    } */
     
 }
