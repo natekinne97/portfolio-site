@@ -144,6 +144,8 @@ section img{
 
 .port-entry{
     margin-bottom: 4%;
+    text-align: center;
+    margin-top: 2em;
 }
 /* code links */
 .code-links-group{
