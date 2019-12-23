@@ -62,7 +62,7 @@ function checkSectionVisible(){
 
     $(window).scroll(function(){
         // get conainter position
-        let fromTop = $(this).scrollTop() + 100;
+        let fromTop = $(this).scrollTop() + 200;
         
         // get id of current scroll item
         let cur = scrollItems.map(function(){
